@@ -85,7 +85,6 @@ public class User implements Serializable {
      */
     private String planetCode;
 
-    // https://github.com/liyupi
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
