@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: shier-user-center
+  datasource:
+    url: jdbc:mysql://localhost:3307/db_greenhouse
+    username: root
+    password: 123456
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  profiles:
+    active: dev
+  session:
+    timeout: 86400
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+server:
+  port: 8102
+  servlet:
+    context-path: /api
+
+knife4j:
+  enable: true
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+aliyun:
+  oss:
+    file:
+      endpoint: xxxx
+      keyid: xxxx
+      keysecret: xxxx
+      bucketname: xxxx
