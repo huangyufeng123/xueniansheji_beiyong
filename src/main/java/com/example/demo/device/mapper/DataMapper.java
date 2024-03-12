@@ -16,15 +16,6 @@ import org.apache.ibatis.type.JdbcType;
 import java.sql.Timestamp;
 
 
-
-
-//public interface DataMapper extends BaseMapper<DataEntity> {
-//    @Select("SELECT temperature, humidity, oxygen,co2, youji, device_id, create_time FROM tb_data")
-//    @Results(value = {
-//            @Result(property = "createTime", column = "create_time", javaType = LocalDateTime.class, jdbcType = JdbcType.TIMESTAMP),
-//    })
-//    List<DataDto> findAllTemperatureHumidityOxygen();
-
 public interface DataMapper extends BaseMapper<DataEntity> {
 
 

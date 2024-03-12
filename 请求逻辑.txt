@@ -1,0 +1,48 @@
+注册：http://localhost:8102/api/user/register
+{
+    "userAccount": "linbicheng123",
+    "userPassword": "12345678",
+    "checkPassword": "12345678",
+    "planetCode": "12345"
+}
+登录：http://localhost:8102/api/user/login
+{
+    "userAccount": "linbicheng123",
+    "userPassword": "12345678"
+}
+获取当前登录用户信息：http://localhost:8102/api/user/current GET
+登出：http://localhost:8102/api/user/logout POST
+获取用户信息（管理员）：http://localhost:8102/api/user/search GET
+删除用户信息（管理员） ：http://localhost:8102/api/user/delete POST   发送10，而不是json数据
+获取最新一条数据：http://localhost:8102/api/api/data/latest-data
+绘图：http://localhost:8102/api/api/data/chart-data
+插入数据：http://localhost:8102/api/data/insert_data1
+{
+  "name": "Device aaa1",
+  "deviceID": 123,
+  "type": 1,
+  "humidity": 50.5,
+  "oxygen": 21.0,
+  "temperature": 25.0,
+  "youji": 0.5,
+  "co2": 400.0
+}
+获取指定时间的数据：http://localhost:8102/api/api/data/range_time
+{
+  "startTime": "2023-08-14T15:26:41",
+  "endTime": "2023-08-14T16:56:13"
+}
+1:high,2:low,3:high
+http://localhost:8102/api/data1/insert_soil POST
+{
+  "soil1":"2",
+   "soil2":"3",
+    "soil3":"2",
+    "soil4":"2",
+    "soil5":"2",
+    "soil6":"2",
+    "soil7":"2",
+    "soil8":"2"
+}
+比平均值低，就显示low
+比平均值高，就显示high

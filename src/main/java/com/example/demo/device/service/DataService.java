@@ -5,7 +5,7 @@ import com.example.demo.device.mapper.DataMapper;
 import com.example.demo.device.dto.DataDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-//import com.example.demo.device.repository.DataRepository;
+//import com.example.demo.device.sql.repository.DataRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;

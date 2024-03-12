@@ -1,8 +1,8 @@
 package com.example.demo.device.service;
 
-//import com.example.demo.device.entity.Co2Entity;
+//import com.example.demo.device.sql.entity.Co2Entity;
 import com.example.demo.device.entity.DataEntity;
-//import com.example.demo.device.mapper.Co2Mapper;
+//import com.example.demo.device.sql.mapper.Co2Mapper;
 import com.example.demo.device.mapper.DataInsertMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -2,13 +2,13 @@ package com.example.demo.device.control;
 import com.example.demo.device.entity.DataEntity;
 import com.example.demo.device.entity.DeviceEntity;
 import com.example.demo.device.entity.CommandEntity;
-//import com.example.demo.device.entity.HumidityEntity;
+//import com.example.demo.device.sql.entity.HumidityEntity;
 import com.example.demo.device.response.ControlResponse;
 import com.example.demo.device.response.DataInsertRequest;
 import com.example.demo.device.service.DataInsertService;
 import com.example.demo.device.service.DeviceService;
 import com.example.demo.device.service.CommandService;
-//import com.example.demo.device.service.HumidityService;
+//import com.example.demo.device.sql.service.HumidityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -52,7 +52,7 @@ public class DataInsertController {
 
     @PostMapping("/insert_data1")
     public ResponseEntity<String> insertData1(@RequestBody DataInsertRequest request) {
-        // Insert device data
+        // Insert device.sql data
         DeviceEntity deviceEntity = new DeviceEntity();
         deviceEntity.setName(request.getName());
         deviceEntity.setDeviceId(request.getDeviceID());
@@ -61,7 +61,7 @@ public class DataInsertController {
         // Insert CO2 data
         DataEntity dataEntity = new DataEntity();
         dataEntity.setDeviceId(request.getDeviceID());
-//        co2Entity.setDevice(deviceEntity); // Set the device entity
+//        co2Entity.setDevice(deviceEntity); // Set the device.sql entity
         dataEntity.setHumidity(request.getHumidity());
         dataEntity.setTemperature(request.getTemperature());
         dataEntity.setOxygen(request.getOxygen());
