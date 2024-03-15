@@ -1,0 +1,31 @@
+简易的命令行入门教程:
+Git 全局设置:
+
+git config --global user.name "黄瑜峰"
+git config --global user.email "156048846@qq.com"
+创建 git 仓库:
+
+
+
+mkdir greenhouse_v1
+cd greenhouse_v1
+git init 
+touch README.md
+git add README.md
+git add .
+git commit -m "first commit"
+git remote add origin https://gitee.com/lin-bichen/greenhouse_v1.git
+git push -u origin "master"
+
+
+已有仓库?
+
+cd existing_git_repo
+git remote add origin https://gitee.com/lin-bichen/dragon_v1.git
+git remote add origin https://gitee.com/lin-bichen/greenhouse_v1.git
+git remote add origin https://gitee.com/lin-bichen/dragon_v1_apk.git
+换到另外一个项目提交：>>>git remote set-url origin git@github.com:your_username/your_repository.git  add改为set-url
+git push -u origin "master"
+
+出现问题：fatal: remote origin already exists.
+解决：

@@ -1,0 +1,13 @@
+http://localhost:8102/api/data1/insert_soil POST
+{
+  "soil1":"2",
+   "soil2":"3",
+    "soil3":"2",
+    "soil4":"2",
+    "soil5":"2",
+    "soil6":"2",
+    "soil7":"2",
+    "soil8":"2"
+}
+比平均值低，就显示low
+比平均值高，就显示high
