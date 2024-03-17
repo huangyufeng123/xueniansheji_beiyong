@@ -4,11 +4,11 @@
 #include <ArduinoJson.h>
 
 // WiFi设置
-const char* ssid = "TP-LINK_";
-const char* password = "20040606zyy";
+const char* ssid = "105A";
+const char* password = "10152886";
 
 // 服务器URL
-const char* serverUrl = "http://192.168.0.108:8102/api/data1/insert_soil";
+const char* serverUrl = "http://192.168.3.10:8102/api/data1/insert_soil";
 
 int sensorPin[8] = {27, 14, 12, 13, 4, 0, 2, 15};
 float sensorValue[8] = {0};

@@ -4,13 +4,13 @@
   #include <ArduinoJson.h>
 
   // WiFi设置
-  const char* ssid = "TP-LINK_";
-  const char* password = "20040606zyy";
+  const char* ssid = "105A";
+  const char* password = "10152886";
   String s = " ";
 
 
   // 服务器URL
-  const char* serverUrl = "http://192.168.0.108:8102/api/data1/soil";
+  const char* serverUrl = "http://192.168.3.10:8102/api/data1/soil";
 
 
 
