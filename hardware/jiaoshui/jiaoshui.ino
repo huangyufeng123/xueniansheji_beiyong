@@ -30,14 +30,15 @@ void loop() {
  qingqiu();
 
     if ( s !="0"){
-      digitalWrite(16, HIGH); 
+      digitalWrite(35, LOW); 
       Serial.println("开始浇水");        
       }else{
-      digitalWrite(16,LOW); 
+      digitalWrite(35,HIGH); 
       Serial.println("停止浇水");
       }
  delay(20000);
 }
+
 void qingqiu(){
 
    if (WiFi.status() == WL_CONNECTED) {
