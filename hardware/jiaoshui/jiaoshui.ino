@@ -30,10 +30,10 @@ void loop() {
  qingqiu();
 
     if ( s !="0"){
-      digitalWrite(35, LOW); 
+      digitalWrite(35, HIGH); 
       Serial.println("开始浇水");        
       }else{
-      digitalWrite(35,HIGH); 
+      digitalWrite(35,LOW); 
       Serial.println("停止浇水");
       }
  delay(20000);
