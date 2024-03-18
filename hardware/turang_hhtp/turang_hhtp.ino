@@ -12,8 +12,8 @@ const char* serverUrl = "http://192.168.3.10:8102/api/data1/insert_soil";
 
 int sensorPin[8] = {27, 14, 12, 13, 4, 0, 2, 15};
 float sensorValue[8] = {0};
-float soil[8] = {40,50,60,80,70,60,40,50};
-float soil1, soil2, soil3, soil4, soil5, soil6, soil7, soil8;
+float soil[8] = {0};
+//float soil1, soil2, soil3, soil4, soil5, soil6, soil7, soil8;
 
 void setup() {
     Serial.begin(115200);
@@ -44,7 +44,7 @@ void lianjie(){
 void readSensors() {
     for (int i = 0; i < 8; i++) {
       sensorValue[i] = analogRead(sensorPin[i]);
-      soil[i] = (sensorValue[i] / 4095.0) * 100;
+      soil[i] = (1-(sensorValue[i] / 4095.0)) * 100;
       float soil1 = soil[0];
       float soil2 = soil[1];
       float soil3 = soil[2];
@@ -59,14 +59,14 @@ void readSensors() {
 
 void sendSoilDataToServer() {
   
-  String jsonBody = "{\"soil1\":\"" + String(soil1) +
-                  "\",\"soil2\":\"" + String(soil2) +
-                  "\",\"soil3\":\"" + String(soil3) +
-                  "\",\"soil4\":\"" + String(soil4) +
-                  "\",\"soil5\":\"" + String(soil5) +
-                  "\",\"soil6\":\"" + String(soil6) +
-                  "\",\"soil7\":\"" + String(soil7) +
-                  "\",\"soil8\":\"" + String(soil8) + "\"}";
+  String jsonBody = "{\"soil1\":\"" + String(soil[0]) +
+                  "\",\"soil2\":\"" + String(soil[1]) +
+                  "\",\"soil3\":\"" + String(soil[2]) +
+                  "\",\"soil4\":\"" + String(soil[3]) +
+                  "\",\"soil5\":\"" + String(soil[4]) +
+                  "\",\"soil6\":\"" + String(soil[5]) +
+                  "\",\"soil7\":\"" + String(soil[6]) +
+                  "\",\"soil8\":\"" + String(soil[7]) + "\"}";
 
     Serial.println("传感器数据:"+ String(jsonBody));
     String jsonPayload;
