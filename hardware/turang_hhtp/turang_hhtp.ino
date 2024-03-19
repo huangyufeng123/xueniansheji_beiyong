@@ -13,14 +13,22 @@ const char* serverUrl = "http://192.168.3.10:8102/api/data1/insert_soil";
 int sensorPin[8] = {27, 14, 12, 13, 4, 0, 2, 15};
 float sensorValue[8] = {0};
 float soil[8] = {0};
+float soil0[16] = {0};
+float soil1[16] = {0};
+float soil2[16] = {0};
+float soil3[16] = {0};
+float soil4[16] = {0};
+float soil5[16] = {0};
+float soil6[16] = {0};
+float soil7[16] = {0};
+
 //float soil1, soil2, soil3, soil4, soil5, soil6, soil7, soil8;
 
 void setup() {
-    Serial.begin(115200);
-
-    for (int i = 0; i < 8; i++) {
+  Serial.begin(115200);
+  for (int i = 0; i < 8; i++) {
     pinMode(sensorPin[i], INPUT);
-    }
+  }
 }
 
 void loop() {
@@ -42,6 +50,8 @@ void lianjie(){
     Serial.println("WIFI 连接成功!");
 }
 void readSensors() {
+  for(int j = 0; j < 16; j++){
+
     for (int i = 0; i < 8; i++) {
       sensorValue[i] = analogRead(sensorPin[i]);
       soil[i] = (1-(sensorValue[i] / 4095.0)) * 100;
@@ -54,7 +64,8 @@ void readSensors() {
       float soil7 = soil[6];
       float soil8 = soil[7];
     }
-    Serial.println("数据采集完成!");
+  }
+  Serial.println("数据采集完成!");
 }
 
 void sendSoilDataToServer() {
