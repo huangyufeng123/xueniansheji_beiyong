@@ -1,0 +1,13 @@
+# 线上配置文件
+spring:
+  # DataSource Config
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://gz-cynosdbmysql-grp-iru8stll.sql.tencentcdb.com:28151/db_greenhouse?useSSL=false
+    username: root
+    password: huang156048846.
+  # session 失效时间
+  session:
+    timeout: 86400
+server:
+  address: 0.0.0.0
