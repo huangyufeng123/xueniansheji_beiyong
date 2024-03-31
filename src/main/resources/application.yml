@@ -2,6 +2,9 @@ spring:
   application:
     name: shier-user-center
   datasource:
+#    url: jdbc:mysql://gz-cynosdbmysql-grp-iru8stll.sql.tencentcdb.com:28151/db_greenhouse?useSSL=false
+#    username: root
+#    password: huang156048846.
     url: jdbc:mysql://localhost:3307/db_greenhouse
     username: root
     password: 123456
@@ -22,23 +25,20 @@ server:
   servlet:
     context-path: /api
 
-knife4j:
-  enable: true
-
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   global-config:
     db-config:
       logic-delete-field: isDelete
       logic-delete-value: 1
       logic-not-delete-value: 0
 
-aliyun:
-  oss:
-    file:
-      endpoint: xxxx
-      keyid: xxxx
-      keysecret: xxxx
-      bucketname: xxxx
+#aliyun:
+#  oss:
+#    file:
+#      endpoint: xxxx
+#      keyid: xxxx
+#      keysecret: xxxx
+#      bucketname: xxxx
