@@ -68,8 +68,20 @@
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="user" />
-                  <option name="tableName" value="user" />
+                  <option name="className" value="tb_user" />
+                  <option name="tableName" value="tb_user" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="tb_soil" />
+                  <option name="tableName" value="tb_soil" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="tb_data" />
+                  <option name="tableName" value="tb_data" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="tb_command" />
+                  <option name="tableName" value="tb_command" />
                 </TableUIInfo>
               </list>
             </option>

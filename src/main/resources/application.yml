@@ -5,7 +5,7 @@ spring:
 #    url: jdbc:mysql://gz-cynosdbmysql-grp-iru8stll.sql.tencentcdb.com:28151/db_greenhouse?useSSL=false
 #    username: root
 #    password: huang156048846.
-    url: jdbc:mysql://localhost:3307/db_greenhouse
+    url: jdbc:mysql://localhost:3307/db_greenhouse_v1
     username: root
     password: 123456
   mvc:
