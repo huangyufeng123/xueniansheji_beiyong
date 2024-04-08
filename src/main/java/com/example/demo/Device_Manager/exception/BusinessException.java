@@ -1,5 +1,7 @@
-package com.example.demo.account.exception;
-import com.example.demo.account.common.ErrorCode;
+package com.example.demo.Device_Manager.exception;
+
+import com.example.demo.Device_Manager.common.ErrorCode;
+
 /**
  * 自定义异常类
  *

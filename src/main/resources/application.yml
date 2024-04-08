@@ -1,6 +1,6 @@
 spring:
   application:
-    name: shier-user-center
+    name: shier-tb_user-center
   datasource:
 #    url: jdbc:mysql://gz-cynosdbmysql-grp-iru8stll.sql.tencentcdb.com:28151/db_greenhouse?useSSL=false
 #    username: root

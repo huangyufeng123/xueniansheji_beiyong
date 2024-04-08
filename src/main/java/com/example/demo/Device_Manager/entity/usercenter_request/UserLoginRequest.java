@@ -1,4 +1,4 @@
-package com.example.demo.account.entity.request;
+package com.example.demo.Device_Manager.entity.usercenter_request;
 
 import lombok.Data;
 

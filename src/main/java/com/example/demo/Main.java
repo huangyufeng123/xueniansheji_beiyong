@@ -20,8 +20,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 
 @SpringBootApplication
-//@MapperScan("com.example.demo.account.mapper")
-@MapperScan({"com.example.demo.account.mapper","com.example.demo.Device_Manager.mapper"})
+//@MapperScan("com.example.demo.Device_Manager.mapper")
+@MapperScan({"com.example.demo.Device_Manager.mapper","com.example.demo.Device_Manager.mapper"})
 public class Main {
 
     public static void main(String[] args) {

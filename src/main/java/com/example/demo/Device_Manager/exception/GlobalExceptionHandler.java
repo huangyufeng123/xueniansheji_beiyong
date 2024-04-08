@@ -1,11 +1,12 @@
-package com.example.demo.account.exception;
+package com.example.demo.Device_Manager.exception;
 
+
+import com.example.demo.Device_Manager.common.BaseResponse;
+import com.example.demo.Device_Manager.common.ErrorCode;
+import com.example.demo.Device_Manager.common.ResultUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import com.example.demo.account.common.ErrorCode;
-import com.example.demo.account.common.ResultUtils;
-import com.example.demo.account.common.BaseResponse;
 /**
  * 全局异常处理器
  *

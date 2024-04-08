@@ -1,4 +1,4 @@
-package com.example.demo.account.contant;
+package com.example.demo.Device_Manager.contant;
 
 /**
  * 用户常量
