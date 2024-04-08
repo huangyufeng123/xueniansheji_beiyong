@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.Device_Manager.mapper.tb_commandMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.Device_Manager.entity.tb_command">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="command" column="command" jdbcType="VARCHAR"/>
+            <result property="time" column="time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,command,time
+    </sql>
+</mapper>

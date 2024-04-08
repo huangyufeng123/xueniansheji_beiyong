@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.Device_Manager.mapper.tb_dataMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.Device_Manager.entity.tb_data">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="device_id" column="device_id" jdbcType="INTEGER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="oxygen" column="oxygen" jdbcType="DECIMAL"/>
+            <result property="humidity" column="humidity" jdbcType="DECIMAL"/>
+            <result property="temperature" column="temperature" jdbcType="DECIMAL"/>
+            <result property="light" column="light" jdbcType="DECIMAL"/>
+            <result property="co2" column="co2" jdbcType="DECIMAL"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,device_id,create_time,
+        oxygen,humidity,temperature,
+        light,co2
+    </sql>
+</mapper>

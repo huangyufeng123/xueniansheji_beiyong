@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.Device_Manager.mapper.tb_soilMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.Device_Manager.entity.tb_soil">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="soil1" column="soil1" jdbcType="VARCHAR"/>
+            <result property="soil2" column="soil2" jdbcType="VARCHAR"/>
+            <result property="soil3" column="soil3" jdbcType="VARCHAR"/>
+            <result property="soil4" column="soil4" jdbcType="VARCHAR"/>
+            <result property="soil5" column="soil5" jdbcType="VARCHAR"/>
+            <result property="soil6" column="soil6" jdbcType="VARCHAR"/>
+            <result property="soil7" column="soil7" jdbcType="VARCHAR"/>
+            <result property="soil8" column="soil8" jdbcType="VARCHAR"/>
+            <result property="time" column="time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,soil1,soil2,
+        soil3,soil4,soil5,
+        soil6,soil7,soil8,
+        time
+    </sql>
+</mapper>
