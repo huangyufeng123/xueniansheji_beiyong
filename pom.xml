@@ -66,6 +66,13 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.9</version>
+        </dependency>
+
+
 
         <!-- https://doc.xiaominfo.com/knife4j/documentation/get_start.html-->
         <dependency>

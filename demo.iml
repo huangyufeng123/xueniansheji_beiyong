@@ -79,6 +79,7 @@
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.13" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.15" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.15" level="project" />
+    <orderEntry type="library" name="Maven: cn.hutool:hutool-all:5.8.9" level="project" />
     <orderEntry type="library" name="Maven: com.github.xiaoymin:knife4j-spring-boot-starter:3.0.3" level="project" />
     <orderEntry type="library" name="Maven: com.github.xiaoymin:knife4j-spring-boot-autoconfigure:3.0.3" level="project" />
     <orderEntry type="library" name="Maven: com.github.xiaoymin:knife4j-spring:3.0.3" level="project" />

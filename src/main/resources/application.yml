@@ -42,3 +42,6 @@ mybatis-plus:
 #      keyid: xxxx
 #      keysecret: xxxx
 #      bucketname: xxxx
+
+accessKey: z82ludu6wn79rfv0zxhc7zaul4bmcwea
+secretKey: zgtytyo1akvb2fg7ldze5dowzv5gmdx0
