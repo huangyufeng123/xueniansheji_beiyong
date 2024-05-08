@@ -26,9 +26,9 @@ public class tb_dataController {
         data.setCreate_time(new Date());
         boolean isSaved = dataService.save(data);
         if(isSaved){
-            return ResultUtils.success("Data inserted successfully");
+            return ResultUtils.success("数据插入成功");
         } else {
-            return ResultUtils.error(ErrorCode.PARAMS_ERROR, "Failed to insert data", "Check data exists or correct");
+            return ResultUtils.error(ErrorCode.PARAMS_ERROR, "数据插入失败", "请检查数据");
         }
     }
 
